@@ -1,7 +1,5 @@
-– hosts: all
-user: fiba
-sudo: yes
-tasks:
-  - name: Install Nginx
-    apt: pkg=nginx state=installed update_cache=true
-
+---
+- hosts: local
+  tasks:
+   - name: Install Nginx
+     apt: pkg=nginx state=installed update_cache=true
