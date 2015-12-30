@@ -2,6 +2,4 @@
 - hosts: all
   tasks:
    - name: Install Nginx 
-     user: fiba
-     key: "{{ lookup('file', '/home/fiba/.ssh/id_rsa.pub') }}"
      apt: pkg=nginx state=installed update_cache=true
