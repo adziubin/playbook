@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
- - authorized_key:
+   - authorized_key:
      user: charlie
      key: "{{ lookup('file', '/home/fiba/.ssh/id_rsa.pub') }}"
    - name: Install Nginx
