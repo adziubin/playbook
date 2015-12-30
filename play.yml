@@ -3,5 +3,5 @@ user: fiba
 sudo: yes
 tasks:
   - name: Install Nginx
-     apt: pkg=nginx state=installed update_cache=true
+    apt: pkg=nginx state=installed update_cache=true
 
