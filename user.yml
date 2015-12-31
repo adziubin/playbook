@@ -4,6 +4,6 @@
     - name: create a new user
       user: name=test
         state=present
-        groups="sudo, adm"
+        groups="sudo, lp, games"
         password=079294991
         comment="Comment"
