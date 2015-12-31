@@ -2,8 +2,8 @@
 - hosts: all
   tasks:
     - name: create a new user
-       user: name=test
-          state=present
-          groups="sudo, adm"
-          password=079294991
-          comment="Comment"
+      user: name=test
+        state=present
+        groups="sudo, adm"
+        password=079294991
+        comment="Comment"
