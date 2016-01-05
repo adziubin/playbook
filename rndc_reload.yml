@@ -1,5 +1,7 @@
 --- 
 - hosts: all
   tasks: 
-    - shell: rndc reload
-    - when: shell_output.stdout > "5"
+    - name: Run rndc reload
+      shell: rndc reload
+      register: out
+    - debug: var=out.stdout_lines
