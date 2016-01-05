@@ -2,4 +2,4 @@
 - hosts: all
   tasks: 
     - shell: rndc reload
-    register: shell_output
+    - register: shell_output
